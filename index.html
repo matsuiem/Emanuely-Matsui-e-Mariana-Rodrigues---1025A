@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Quem é esse Bruxo?</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f1e6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #6b4f1d;
+        }
+        form {
+            margin: 20px;
+        }
+        input,
+        button {
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            background: #7b1e1e;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #card {
+
+            display: none;
+            background: white;
+            width: 260px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px gray;
+
+        }
+
+        img {
+
+            width: 180px;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 8px;
+
+        }
+
+        .silhouette {
+
+            filter: brightness(0);
+
+        }
+
+        table {
+
+            width: 70%;
+            margin-top: 40px;
+            border-collapse: collapse;
+
+        }
+
+        th,
+        td {
+
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+
+        }
+
+        th {
+
+            background: #ddd;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Quem é esse Bruxo?</h1>
+
+    <form>
+
+        <input type="text" name="personagem" placeholder="Digite o nome">
+
+        <button>
+
+            Revelar
+
+        </button>
+
+    </form>
+
+    <div id="card">
+
+        <img id="img">
+
+        <h2 id="nome"></h2>
+
+        <p>
+
+            <b>Casa:</b>
+
+            <span id="casa"></span>
+
+        </p>
+
+        <p id="resultado"></p>
+
+    </div>
+
+    <h2>Histórico</h2>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Nome</th>
+
+                <th>Tentativa</th>
+
+                <th>Excluir</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="tbody">
+
+        </tbody>
+
+    </table>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
