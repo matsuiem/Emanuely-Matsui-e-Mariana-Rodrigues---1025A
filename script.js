@@ -68,6 +68,9 @@ function buscarPersonagens() {
             document.getElementById("casa").innerHTML =
                 personagemAtual.house || "Sem casa";
 
+            document.getElementById("magia").innerHTML =
+                personagemAtual.magia || "Sem magia";
+
             document.getElementById("card").style.display = "block";
 
         });
